@@ -4,12 +4,12 @@ https://www.gnu.org/software/make/manual/html_node/Implicit-Variables.html
 
 ```
 CC = gcc
-SRC = main.c
+OBJS = main.c
 CFLAGS = -Wall
 LDFLAGS = -lncurses
 OUT = game
 
-all: $(SRC)
+all: $(OBJS)
 	$(CC) $(CFLAGS) $(LDFLAGS) $(SRC) -o $(OUT)
 
 .PHONY: clean
