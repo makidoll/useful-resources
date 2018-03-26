@@ -6,5 +6,6 @@
 
 ```
 ffmpeg -r 30 -i %04d.png -c:v libx264 -vf "format=yuv420p" out.mp4
-ffmpeg -r 30 -i %04d.png -c:v ffvhuff -vf "format=yuv420p" out.avi
+ffmpeg -r 30 -i %04d.png -c:v libx264 -crf 0 -preset veryslow out.mp4
+ffmpeg -r 30 -i %04d.png -c:v libx264 -preset ultrafast/veryslow -crf 0 out.mkv
 ```
