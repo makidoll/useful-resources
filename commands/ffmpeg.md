@@ -5,7 +5,6 @@
 # Images to video
 
 ```
-ffmpeg -r 30 -i %04d.png -c:v libx264 -vf "format=yuv420p" out.mp4
-ffmpeg -r 30 -i %04d.png -c:v libx264 -crf 0 -preset veryslow out.mp4
-ffmpeg -r 30 -i %04d.png -c:v libx264 -preset ultrafast/veryslow -crf 0 out.mkv
+ffmpeg -r 30 -i %04d.png -c:v libx264 -pix_fmt yuv420p -preset veryslow -crf 23 out.mp4
+ffmpeg -r 30 -i %04d.png -c:v libx264 -preset veryslow -crf 23 out.mkv
 ```
