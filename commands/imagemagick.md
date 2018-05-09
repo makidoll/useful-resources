@@ -10,7 +10,7 @@ convert -loop 0 -delay 100/60 *.png -interpolate Nearest -filter point -resize 4
 GIF to PNG
 
 ```
-convert -coalesce in.gif out%04d.png
+convert -coalesce in.gif %04d.png
 ```
 
 PNG files to spritesheet
