@@ -16,5 +16,5 @@ convert -coalesce in.gif out%04d.png
 PNG files to spritesheet
 
 ```
-montage *.png -background none -geometry +0+0 out.png
+montage *.png -background none -geometry +0+0 -tile x1 out.png
 ```
