@@ -4,7 +4,7 @@ https://www.gnu.org/software/make/manual/html_node/Implicit-Variables.html
 
 ```
 CC = gcc
-OBJS = main.c
+OBJS = main.o
 CFLAGS = -Wall
 LDFLAGS = -lncurses
 OUT = game
